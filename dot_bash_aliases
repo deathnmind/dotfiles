@@ -1,0 +1,2 @@
+alias ldir='ls -ld */'
+alias nano='nano -l'
