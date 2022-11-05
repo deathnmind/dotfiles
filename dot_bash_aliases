@@ -1,2 +1,3 @@
 alias ldir='ls -ld */'
 alias nano='nano -l'
+alias update='sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y'
