@@ -3,7 +3,6 @@
 
 set -eufo pipefail
 
-repositories=()
 packages=(
 	curl
 	wget
@@ -11,17 +10,6 @@ packages=(
 	jq
 	python3-pip
 )
-
-{{ if (eq .chezmoi.osRelease.id "ubuntu") }}
-packages+=(
-	software-properties-common
-	apt-transport-https
-)
-{{ end }}
-
-for repository in ${repositories[@]}; do
-	sudo add-apt-repository -y $repository
-done
 
 sudo apt update
 
