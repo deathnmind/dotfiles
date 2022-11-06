@@ -10,7 +10,7 @@
 set autoindent
 
 # Backup files to `filename` + `~`.
-set backup
+#set backup
 
 # Constantly show the cursor position in the status bar.
 set constantshow
