@@ -24,7 +24,7 @@ set linenumbers
 # Enable mouse support, if available for your system. When enabled,
 # mouse clicks can be used to place the cursor, set the mark (with a
 # double click), and execute shortcuts.
-set mouse
+#set mouse
 
 # Keep original end-of-line formatting.
 set noconvert
