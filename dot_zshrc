@@ -111,4 +111,4 @@ source $ZSH/oh-my-zsh.sh
 #NVM_LAZY=1
 
 # Run neofetch when a new terminal is launched
-neofetch
+#neofetch

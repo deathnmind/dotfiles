@@ -27,7 +27,7 @@ set linenumbers
 #set mouse
 
 # Keep original end-of-line formatting.
-set noconvert
+#set noconvert
 
 # Preserve the XON `^Q` and XOFF `^S` keys for the terminal.
 set preserve
@@ -41,7 +41,7 @@ set smarthome
 
 # Enable smooth scrolling. Text will scroll line-by-line, instead of
 # the usual chunk-by-chunk behavior.
-set smooth
+#set smooth
 
 # Allow nano to be suspended with `^Z`.
 set suspend
