@@ -1,0 +1,17 @@
+{{ if (eq .chezmoi.os "linux") -}}
+{{   if not (eq .chezmoi.username "ubuntu") -}}
+#!/bin/bash
+
+# set custom alias file symbolic link
+# sudo sh -c 'cp ~/.bash_aliases ~/.oh-my-zsh/custom/aliases.zsh'
+
+set -eufo pipefail
+
+yellow='\e[0;33m'
+echo -e "${yellow}Enter your password to set ZSH as your default shell"
+
+# Set ZSH as the default shell
+chsh -s $(which zsh)
+
+{{  end -}}
+{{ end -}}

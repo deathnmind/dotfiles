@@ -1,0 +1,18 @@
+# ~/.curlrc
+# =============================================================================
+# Configures startup options for cURL.
+#
+# See https://ec.haxx.se/cmdline/cmdline-configfile
+# See https://gist.github.com/v1m/f1d4751883f19c916515
+
+# Follow `Location:` headers and 3XX response codes.
+--location
+
+# Set the previous URL automatically when following a `Location:` header.
+-e ";auto"
+
+# Define the user agent identification header.
+-A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+
+# ok if certification validation fails
+--insecure

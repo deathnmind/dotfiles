@@ -1,0 +1,7 @@
+alias ldir='ls -ld */'
+alias update='sudo nala update && sudo nala upgrade -y'
+alias apt_update='sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y'
+alias weather='curl -A "curl" wttr.in'
+alias git-cache="git config --global credential.helper cache"
+alias git-store="git config --global credential.helper store"
+alias git-uncache="git config --global --unset credential.helper"
