@@ -126,7 +126,7 @@ fi
 eval $(ssh-agent) 1>/dev/null
 
 # add local bin
-export PATH="$PATH:~/.local/bin"
+export PATH="$PATH:/home/$USER/.local/bin"
 
 # powerlevel10k
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
