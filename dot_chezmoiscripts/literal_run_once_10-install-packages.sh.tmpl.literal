@@ -4,16 +4,16 @@
 set -eufo pipefail
 
 packages=(
-	curl
-	wget
-	htop
-	jq
-	python3-pip
-	zsh
-	mmv
-	tmux
-	nload
-	git
+        curl
+        wget
+        htop
+        jq
+        python3-pip
+        zsh
+        mmv
+        tmux
+        nload
+        git
 )
 
 sudo apt update
