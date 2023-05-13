@@ -122,11 +122,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
 # used for ssh-add to find the ssh-agent process
 eval $(ssh-agent) 1>/dev/null
 
 # add local bin
 export PATH="$PATH:~/.local/bin"
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# powerlevel10k
+source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
