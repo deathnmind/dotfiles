@@ -1,9 +1,6 @@
 {{ if (eq .chezmoi.os "linux") -}}
 {{   if (eq .chezmoi.osRelease.idLike "debian" "ubuntu") -}}
 #!/bin/bash
-# set path
-export PATH=$PATH:$HOME/.local/bin
-
 #get chezmoi
 sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin
 
