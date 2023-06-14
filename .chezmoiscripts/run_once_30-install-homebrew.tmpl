@@ -1,0 +1,8 @@
+{{ if (eq .chezmoi.os "darwin") -}}
+# Install homebrew if it's not there already.
+if ! brew --version
+then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    brew install --cask wezterm
+fi
+{{ end -}}
