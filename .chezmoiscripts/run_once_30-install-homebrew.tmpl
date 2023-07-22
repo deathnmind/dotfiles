@@ -1,4 +1,4 @@
-{{ if (eq .chezmoi.os "darwin") -}}
+{{- if (eq .chezmoi.os "darwin") -}}
     #!/bin/bash
 
     echo "Installing Homebrew..."
@@ -7,4 +7,4 @@
 
     echo "Homebrew Installed!"
 
-{{ end -}}
+{{- end -}}
