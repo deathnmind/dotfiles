@@ -5,3 +5,4 @@ alias weather='curl -A "curl" wttr.in'
 alias git-cache="git config --global credential.helper cache"
 alias git-store="git config --global credential.helper store"
 alias git-uncache="git config --global --unset credential.helper"
+alias less='less -R'
