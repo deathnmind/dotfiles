@@ -16,9 +16,36 @@ end
 config.color_scheme = 'Gruvbox Dark (Gogh)'
 
 -- Turn of bell
-audible_bell = 'Disabled'
+config.audible_bell = 'Disabled'
 
 CloseCurrentPane = { confirm = false }
+
+config.initial_cols = 150
+config.initial_rows = 40
+
+config.keys = {
+  {
+    key = '0',
+    mods = 'CTRL',
+    action = wezterm.action.ResetFontAndWindowSize,
+  },
+  {
+    key = '-',
+    mods = 'CMD|SHIFT',
+    action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+  },
+  {
+    key = '=',
+    mods = 'CMD|SHIFT',
+    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+  },
+  {
+    key = 'w',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.CloseCurrentPane { confirm = true },
+  },
+}
+
 
 -- and finally, return the configuration to wezterm
 return config
