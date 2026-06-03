@@ -1,0 +1,24 @@
+{
+  "name": "GruvboxDarkMedium",
+  "type": "custom",
+  "background": {
+    "primary": "#282828",
+    "diff.added": "#363921",
+    "diff.removed": "#422020"
+  },
+  "text": {
+    "primary": "#ebdbb2",
+    "secondary": "#a89984",
+    "accent": "#fe8019",
+    "response": "#b8bb26"
+  },
+  "border": {
+    "default": "#3c3836",
+    "focused": "#8ec07c"
+  },
+  "status": {
+    "success": "#b8bb26",
+    "warning": "#fabd2f",
+    "error": "#fb4934"
+  }
+}

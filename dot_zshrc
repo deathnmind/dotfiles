@@ -122,11 +122,13 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# used for ssh-add to find the ssh-agent process
-eval $(ssh-agent) 1>/dev/null
+# used for ssh-add to find the ssh-agent process (reuses agent if already running)
+if [ -z "$SSH_AUTH_SOCK" ]; then
+  eval $(ssh-agent -s) 1>/dev/null
+fi
 
 # add local bin
-export PATH="$PATH:/home/$USER/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # powerlevel10k
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
