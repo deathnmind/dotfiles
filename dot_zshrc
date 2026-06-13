@@ -141,3 +141,9 @@ source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 if command -v kubectl &>/dev/null; then
   source <(kubectl completion zsh)
 fi
+
+# Homebrew
+if [ -d "/home/linuxbrew/.linuxbrew" ]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+fi
+
